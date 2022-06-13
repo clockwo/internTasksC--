@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/maxim/CLionProjects/wgTestTask1/cmake-build-debug/
+cmake_ninja_workdir = /Users/maxim/Desktop/internTasks/wgTestTask1/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/maxim/CLionProjects/wgTestTask1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/maxim/CLionProjects/wgTestTask1 -B/Users/maxim/CLionProjects/wgTestTask1/cmake-build-debug
+  COMMAND = cd /Users/maxim/Desktop/internTasks/wgTestTask1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/maxim/Desktop/internTasks/wgTestTask1 -B/Users/maxim/Desktop/internTasks/wgTestTask1/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/maxim/CLionProjects/wgTestTask1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/maxim/Desktop/internTasks/wgTestTask1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -72,7 +72,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_wgTestTask1: phony || CMakeFiles/wgTestTask1.dir
 
-build CMakeFiles/wgTestTask1.dir/main.cpp.o: CXX_COMPILER__wgTestTask1_Debug /Users/maxim/CLionProjects/wgTestTask1/main.cpp || cmake_object_order_depends_target_wgTestTask1
+build CMakeFiles/wgTestTask1.dir/main.cpp.o: CXX_COMPILER__wgTestTask1_Debug /Users/maxim/Desktop/internTasks/wgTestTask1/main.cpp || cmake_object_order_depends_target_wgTestTask1
   DEP_FILE = CMakeFiles/wgTestTask1.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
   OBJECT_DIR = CMakeFiles/wgTestTask1.dir
@@ -106,7 +106,7 @@ build wgTestTask1: CXX_EXECUTABLE_LINKER__wgTestTask1_Debug CMakeFiles/wgTestTas
 # =============================================================================
 
 #############################################
-# Folder: /Users/maxim/CLionProjects/wgTestTask1/cmake-build-debug
+# Folder: /Users/maxim/Desktop/internTasks/wgTestTask1/cmake-build-debug
 
 build all: phony wgTestTask1
 
