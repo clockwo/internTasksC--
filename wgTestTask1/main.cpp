@@ -4,7 +4,7 @@
 
 int main() {
 
-    std::string path {"/Users/maxim/CLionProjects/wgTestTask1/file.txt"}; //path to file.txt
+    std::string path {"/Users/maxim/Desktop/internTasks/wgTestTask1/file.txt"}; //path to file.txt
     std::ifstream obj;
 
     obj.open(path);

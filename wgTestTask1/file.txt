@@ -1,82 +1,9 @@
-Peter Hass; 222
+Peter Hass;3
 
-Julia Tiny; 2222
+Julia Tiny;4
 
-Tomas Novak; 2828
+Tomas Novak;2
 
-Tina Bell;2121
+Tina Bell;5
 
-James Hall;2323
-
-Peter Hass; 222
-
-Julia Tiny; 2222
-
-Tomas Novak; 2828
-
-Maksim Novak; 22
-
-Tina Bell;2
-
-James Hall;2323
-
-Peter Hass; 222
-
-Julia Tiny; 2222
-
-Tomas Novak; 2828
-
-Tina Bell;2121
-
-James Hall;2323
-
-Peter Hass; 222
-
-Julia Tiny; 2222
-
-Tomas Novak; 2828
-
-Tina Bell;2121
-
-James Hall;2323
-
-Peter Hass; 222
-
-Julia Tiny; 2222
-
-Tomas Novak; 2828
-
-Tina Bell;2121
-
-James Hall;2323
-
-Peter Hass; 222
-
-Julia Tiny; 2222
-
-Tomas Novak; 2828
-
-Tina Bell;2121
-
-James Hall;2323
-
-Peter Hass; 222
-
-Julia Tiny; 2222
-
-Tomas Novak; 2828
-
-Tina Bell;2121
-
-James Hall;2323
-
-Peter Hass; 222
-
-Julia Tiny; 2222
-
-Tomas Novak; 2828
-
-Tina Bell;2121
-
-James Hall;2323
-
+James Hall;1
