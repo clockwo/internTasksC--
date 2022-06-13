@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/maxim/CLionProjects/wgTestTask3/cmake-build-debug",
-		"source" : "/Users/maxim/CLionProjects/wgTestTask3"
+		"build" : "/Users/maxim/Desktop/internTasks/wgTestTask3/cmake-build-debug",
+		"source" : "/Users/maxim/Desktop/internTasks/wgTestTask3"
 	},
 	"version" : 
 	{

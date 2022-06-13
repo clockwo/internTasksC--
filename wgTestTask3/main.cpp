@@ -53,9 +53,8 @@ std::vector <Symbol> sort(std::vector <Symbol> &unSorted) {
     std::vector <Symbol> sorted;
     char temp;
     std::vector <Symbol> notInclude;
-    int index {0};
     for (auto const &arr : unSorted) {
-        index = findLargest(unSorted);
+        int index { findLargest(unSorted) };
         if (!isInclude(notInclude, unSorted[index].getSymbol()) )  {
             sorted.push_back(unSorted.at(index));
         }
@@ -78,7 +77,7 @@ std::vector <Symbol> sort(std::vector <Symbol> &unSorted) {
 int findLargest (const std::vector <Symbol> &unSorted) {
     int largest {unSorted[0].getSize()};
     int index {0};
-    for (size_t i {}; i < unSorted.size(); i++) {
+    for (int i {}; i < unSorted.size(); i++) {
         if (largest < unSorted[i].getSize()) {
             largest = unSorted[i].getSize();
             index = i;
