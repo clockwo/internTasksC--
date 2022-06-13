@@ -6,10 +6,12 @@ int findDigitNum(int x);
 bool findContainsNum(int x, int n); //function looks for DigitSum(x) in the number
 
 void printVector(const std::vector <int> &printableVector);
+int setSequence();
 
 int main() {
     //variables
-    int x {3}, n {20} , countRounds{}, count {}; //change here n of sequence
+    int n {setSequence()};
+    int x {3}, countRounds{}, count {}; //change here n of sequence
     //setArrays
     std::vector <int> initialVector (n);
     std::iota(initialVector.begin(),initialVector.end(), 1);
@@ -38,6 +40,13 @@ int main() {
     }
     std::cout << "Rounds: " << countRounds << std::endl;
     return 0;
+}
+
+int setSequence() {
+    int temp {};
+    std::cout << "Set limit of numbers: ";
+    std::cin >> temp;
+    return temp;
 }
 
 void printVector(const std::vector <int> &printableVector) {
