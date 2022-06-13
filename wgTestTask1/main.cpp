@@ -2,9 +2,11 @@
 #include <fstream>
 #include <string>
 
+std::string setPath();
+
 int main() {
 
-    std::string path {"/Users/maxim/Desktop/internTasks/wgTestTask1/file.txt"}; //path to file.txt
+    std::string path { setPath() };
     std::ifstream obj;
 
     obj.open(path);
@@ -36,4 +38,11 @@ int main() {
     }
     obj.close();
     return 0;
+}
+
+std::string setPath() {
+    std::string temp;
+    std::cout << "Set path to file: ";
+    getline(std::cin, temp);
+    return temp;
 }
