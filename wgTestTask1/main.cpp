@@ -25,13 +25,14 @@ int main() {
                 int tempNumber = stoi(tempString);
                 //find the second runner
                 if (tempNumber == 2) {
-                   newStr = str.substr(0, posSemi);
+                    newStr = str.substr(0, posSemi);
+                    break;
                 }
             }
         }
         std::cout << newStr << std::endl;
     } else {
-        std::cout << "0" << std::endl;
+        std::cout << "The file does not exist or cannot be opened." << std::endl;
     }
     obj.close();
     return 0;

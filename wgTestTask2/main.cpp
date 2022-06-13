@@ -1,75 +1,64 @@
 #include <iostream>
 #include <vector>
+#include <numeric>
 
-int findDig(int x);
-bool findIncludeDig(int x, int n);
-std::vector <int> createVector(const int &n);
+int findDigitNum(int x);
+bool findContainsNum(int x, int n); //function looks for DigitSum(x) in the number
 
-void printFirstSequence(const std::vector <int> &arr, const int &x);
+void printVector(const std::vector <int> &printableVector);
 
 int main() {
     //variables
     int x {3}, n {20} , countRounds{}, count {}; //change here n of sequence
     //setArrays
-    std::vector <int> arr = createVector(n);
-    std::vector <int> arrSecond;
-
-    printFirstSequence(arr, x);
+    std::vector <int> initialVector (n);
+    std::iota(initialVector.begin(),initialVector.end(), 1);
+    std::vector <int> workingVector;
 
     while (x != 0) {
-        int digNumber {findDig(x)};
-        for (int i{}; i < arr.size(); i++) {
-            if (arr.at(i) % x != 0 && !findIncludeDig(digNumber, arr.at(i) )) {
-                arrSecond.push_back(arr.at(i));
+        int digitNumber {findDigitNum(x)};
+        for (auto const &temp : initialVector ) {
+            if (temp % x != 0 && !findContainsNum(digitNumber, temp ) ) {
+                workingVector.push_back(temp);
             } else {
                 count++;
             }
         }
         x = count;
         count = 0;
-        for (auto const &ar : arrSecond) {
-            std::cout << ar << ' ';
-        }
-        std::cout << "Digit number: " << findDig(x) << " | X: " << x << std::endl;
+        //PrintInfo
+        printVector(workingVector);
+        std::cout << "Digit number: " << findDigitNum(x) << " | X: " << x << std::endl;
         std::cout << std::endl;
-        arr.clear();
-        arr = arrSecond;
-        arrSecond.clear();
+        //Clearing
+        initialVector.clear();
+        initialVector = workingVector;
+        workingVector.clear();
         countRounds++;
     }
     std::cout << "Rounds: " << countRounds << std::endl;
     return 0;
 }
 
-void printFirstSequence(const std::vector <int> &arr, const int &x){
-    for (auto const &ar : arr) {
+void printVector(const std::vector <int> &printableVector) {
+    for (auto const &ar : printableVector) {
         std::cout << ar << ' ';
     }
-    std::cout << "Digit number: " << findDig(x) << " | X: " << x << std::endl;
-    std::cout << std::endl;
 }
 
-std::vector <int> createVector(const int &n) {
-    std::vector <int> tempVector;
-    for (int i {1}; i <= n; i++) {
-        tempVector.push_back(i);
-    }
-    return tempVector;
-}
-
-int findDig(int x) {
-    int dignum {};
+int findDigitNum(int x) {
+    int digNum {};
     while (x != 0) {
-        dignum = dignum + x % 10;
+        digNum = digNum + x % 10;
         x = x / 10;
     }
-    if (dignum >= 10) {
-        dignum = findDig(dignum);
+    if (digNum >= 10) {
+        digNum = findDigitNum(digNum);
     }
-    return dignum;
+    return digNum;
 }
 
-bool findIncludeDig(int x, int n) {
+bool findContainsNum(int x, int n) {
     while (n != 0) {
         int k {n % 10};
         if (k == x) {
