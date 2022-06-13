@@ -47,15 +47,15 @@ void printVector(const std::vector <int> &printableVector) {
 }
 
 int findDigitNum(int x) {
-    int digNum {};
+    int digitNum {};
     while (x != 0) {
-        digNum = digNum + x % 10;
+        digitNum = digitNum + x % 10;
         x = x / 10;
     }
-    if (digNum >= 10) {
-        digNum = findDigitNum(digNum);
+    if (digitNum >= 10) {
+        digitNum = findDigitNum(digitNum);
     }
-    return digNum;
+    return digitNum;
 }
 
 bool findContainsNum(int x, int n) {
