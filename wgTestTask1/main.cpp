@@ -12,27 +12,27 @@ int main() {
     obj.open(path);
     if (obj.is_open()) {
         //init strings
-        std::string str, newStr;
+        std::string inputStr, nameStr;
         while (!obj.eof()) {
             //set variable to no data
-            str.clear();
+            inputStr.clear();
             //get string from file.txt
-            getline(obj,str);
-            if (str.length() != 0) {
+            getline(obj,inputStr);
+            if (inputStr.length() != 0) {
                 //init and find ';'
-                size_t posSemi = str.find(';');
+                size_t posSemi = inputStr.find(';');
                 //cut string after semicolon
-                std::string tempString {str, posSemi + 1, str.size()};
+                std::string tempString {inputStr, posSemi + 1, inputStr.size()};
                 //init and converting a string value into an int value
                 int tempNumber = stoi(tempString);
                 //find the second runner
                 if (tempNumber == 2) {
-                    newStr = str.substr(0, posSemi);
+                    nameStr = inputStr.substr(0, posSemi);
                     break;
                 }
             }
         }
-        std::cout << newStr << std::endl;
+        std::cout << nameStr << std::endl;
     } else {
         std::cout << "The file does not exist or cannot be opened." << std::endl;
     }
