@@ -12,7 +12,7 @@ int main() {
         //init strings
         std::string str, newStr;
         while (!obj.eof()) {
-            //set variables to no data
+            //set variable to no data
             str.clear();
             //get string from file.txt
             getline(obj,str);
