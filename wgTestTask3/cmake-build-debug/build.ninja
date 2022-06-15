@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: wgTestTask3
+# Project: wgTestTaskC
 # Configurations: Debug
 # =============================================================================
 
@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/maxim/Desktop/internTasks/wgTestTask3/cmake-build-debug/
+cmake_ninja_workdir = /Users/maxim/CLionProjects/wgTestTaskC/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/maxim/Desktop/internTasks/wgTestTask3/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/maxim/Desktop/internTasks/wgTestTask3 -B/Users/maxim/Desktop/internTasks/wgTestTask3/cmake-build-debug
+  COMMAND = cd /Users/maxim/CLionProjects/wgTestTaskC/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/maxim/CLionProjects/wgTestTaskC -B/Users/maxim/CLionProjects/wgTestTaskC/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,53 +57,45 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/maxim/Desktop/internTasks/wgTestTask3/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/maxim/CLionProjects/wgTestTaskC/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target wgTestTask3
+# Object build statements for EXECUTABLE target wgTestTaskC
 
 
 #############################################
-# Order-only phony target for wgTestTask3
+# Order-only phony target for wgTestTaskC
 
-build cmake_object_order_depends_target_wgTestTask3: phony || CMakeFiles/wgTestTask3.dir
+build cmake_object_order_depends_target_wgTestTaskC: phony || CMakeFiles/wgTestTaskC.dir
 
-build CMakeFiles/wgTestTask3.dir/main.cpp.o: CXX_COMPILER__wgTestTask3_Debug /Users/maxim/Desktop/internTasks/wgTestTask3/main.cpp || cmake_object_order_depends_target_wgTestTask3
-  DEP_FILE = CMakeFiles/wgTestTask3.dir/main.cpp.o.d
+build CMakeFiles/wgTestTaskC.dir/main.cpp.o: CXX_COMPILER__wgTestTaskC_Debug /Users/maxim/CLionProjects/wgTestTaskC/main.cpp || cmake_object_order_depends_target_wgTestTaskC
+  DEP_FILE = CMakeFiles/wgTestTaskC.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/wgTestTask3.dir
-  OBJECT_FILE_DIR = CMakeFiles/wgTestTask3.dir
-  TARGET_COMPILE_PDB = CMakeFiles/wgTestTask3.dir/
-  TARGET_PDB = wgTestTask3.pdb
-
-build CMakeFiles/wgTestTask3.dir/Symbol.cpp.o: CXX_COMPILER__wgTestTask3_Debug /Users/maxim/Desktop/internTasks/wgTestTask3/Symbol.cpp || cmake_object_order_depends_target_wgTestTask3
-  DEP_FILE = CMakeFiles/wgTestTask3.dir/Symbol.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/wgTestTask3.dir
-  OBJECT_FILE_DIR = CMakeFiles/wgTestTask3.dir
-  TARGET_COMPILE_PDB = CMakeFiles/wgTestTask3.dir/
-  TARGET_PDB = wgTestTask3.pdb
+  OBJECT_DIR = CMakeFiles/wgTestTaskC.dir
+  OBJECT_FILE_DIR = CMakeFiles/wgTestTaskC.dir
+  TARGET_COMPILE_PDB = CMakeFiles/wgTestTaskC.dir/
+  TARGET_PDB = wgTestTaskC.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target wgTestTask3
+# Link build statements for EXECUTABLE target wgTestTaskC
 
 
 #############################################
-# Link the executable wgTestTask3
+# Link the executable wgTestTaskC
 
-build wgTestTask3: CXX_EXECUTABLE_LINKER__wgTestTask3_Debug CMakeFiles/wgTestTask3.dir/main.cpp.o CMakeFiles/wgTestTask3.dir/Symbol.cpp.o
+build wgTestTaskC: CXX_EXECUTABLE_LINKER__wgTestTaskC_Debug CMakeFiles/wgTestTaskC.dir/main.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
-  OBJECT_DIR = CMakeFiles/wgTestTask3.dir
+  OBJECT_DIR = CMakeFiles/wgTestTaskC.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/wgTestTask3.dir/
-  TARGET_FILE = wgTestTask3
-  TARGET_PDB = wgTestTask3.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/wgTestTaskC.dir/
+  TARGET_FILE = wgTestTaskC
+  TARGET_PDB = wgTestTaskC.pdb
 
 # =============================================================================
 # Target aliases.
@@ -114,9 +106,9 @@ build wgTestTask3: CXX_EXECUTABLE_LINKER__wgTestTask3_Debug CMakeFiles/wgTestTas
 # =============================================================================
 
 #############################################
-# Folder: /Users/maxim/Desktop/internTasks/wgTestTask3/cmake-build-debug
+# Folder: /Users/maxim/CLionProjects/wgTestTaskC/cmake-build-debug
 
-build all: phony wgTestTask3
+build all: phony wgTestTaskC
 
 # =============================================================================
 # Built-in targets

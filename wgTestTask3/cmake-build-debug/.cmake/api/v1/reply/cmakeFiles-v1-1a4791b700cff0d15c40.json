@@ -1123,8 +1123,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/maxim/Desktop/internTasks/wgTestTask3/cmake-build-debug",
-		"source" : "/Users/maxim/Desktop/internTasks/wgTestTask3"
+		"build" : "/Users/maxim/CLionProjects/wgTestTaskC/cmake-build-debug",
+		"source" : "/Users/maxim/CLionProjects/wgTestTaskC"
 	},
 	"version" : 
 	{

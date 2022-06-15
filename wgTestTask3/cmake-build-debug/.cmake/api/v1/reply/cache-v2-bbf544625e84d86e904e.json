@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/maxim/Desktop/internTasks/wgTestTask2/cmake-build-debug"
+			"value" : "/Users/maxim/CLionProjects/wgTestTaskC/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/maxim/Desktop/internTasks/wgTestTask2"
+			"value" : "/Users/maxim/CLionProjects/wgTestTaskC"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -795,7 +795,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "wgTestTask2"
+			"value" : "wgTestTaskC"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1078,7 +1078,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "wgTestTask2_BINARY_DIR",
+			"name" : "wgTestTaskC_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1087,10 +1087,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/maxim/Desktop/internTasks/wgTestTask2/cmake-build-debug"
+			"value" : "/Users/maxim/CLionProjects/wgTestTaskC/cmake-build-debug"
 		},
 		{
-			"name" : "wgTestTask2_IS_TOP_LEVEL",
+			"name" : "wgTestTaskC_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1102,7 +1102,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "wgTestTask2_SOURCE_DIR",
+			"name" : "wgTestTaskC_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/maxim/Desktop/internTasks/wgTestTask2"
+			"value" : "/Users/maxim/CLionProjects/wgTestTaskC"
 		}
 	],
 	"kind" : "cache",
