@@ -1,5 +1,5 @@
 
-# Wargaming Software Engineering Internship Assignment (2022 Prague)
+# Wargaming Software Engineering Internship test tasks (2022 Prague)
 
 Task A:
 https://github.com/Pigotka/wgintern2022/blob/main/InternTaskA.md
