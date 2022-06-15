@@ -10,8 +10,8 @@ int setSequence();
 
 int main() {
     //variables
-    int n {setSequence()};
-    int x {3}, countRounds{}, count {}; //change here n of sequence
+    int n {setSequence()}; //change here n of sequence
+    int x {3}, countRounds{}, count {};
     //setArrays
     std::vector <int> initialVector (n);
     std::iota(initialVector.begin(),initialVector.end(), 1);
